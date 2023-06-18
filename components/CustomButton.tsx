@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { MouseEventHandler } from "react";
+// import Image from 'next/image';
+import { MouseEventHandler } from 'react';
 
 interface ICustomButtonProps {
     title: string,
@@ -10,8 +10,6 @@ interface ICustomButtonProps {
 }
 
 const CustomButton = ({ title, containerStyles, handleClick }: ICustomButtonProps) => {
-    const onButtonClickHandler = () => {}
-
     return (
         <button
             disabled={false}
@@ -21,7 +19,7 @@ const CustomButton = ({ title, containerStyles, handleClick }: ICustomButtonProp
         >
             <span className="flex-1">{title}</span>
         </button>
-     );
-}
- 
+    );
+};
+
 export default CustomButton;

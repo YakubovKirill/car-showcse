@@ -1,3 +1,32 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended", 
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "object-curly-spacing": ["error", "always", { "arraysInObjects": true }],
+    "keyword-spacing": "error",
+    "key-spacing": ["error", {
+      "afterColon": true,
+      "align": "value"
+    }],
+    "indent": ["error", 4],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-multi-spaces": ["error"],
+    "no-trailing-spaces": ["error", { "ignoreComments": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": [
+      "error",
+      {
+        "code": 160
+      }
+    ],
+    "no-multiple-empty-lines": ["error", { "max": 1}],
+    "eol-last": ["error", "always"],
+    "space-infix-ops": "error"
+  },
+  "root": true
 }
